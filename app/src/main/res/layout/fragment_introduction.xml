@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C4000000">
+
+        <!-- ImageView para la imagen de fondo -->
+        <ImageView
+            android:id="@+id/imageViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/vista"
+            android:scaleType="centerCrop" />
+
+        <!-- Vista de color semi-transparente -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#951E1A16" /> <!-- Reemplaza con el color deseado y la opacidad adecuada -->
+
+        <!-- Resto de los elementos de la actividad -->
+        <!-- ... -->
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="299dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/h4"
+        android:layout_width="321dp"
+        android:layout_height="94dp"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="44dp"
+        android:text="@string/introduction"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <Button
+        android:id="@+id/startLogin"
+        style="@style/botonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/boton_login"
+        android:text="@string/empezar"
+        android:textColor="#c92f2f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

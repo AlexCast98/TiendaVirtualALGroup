@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProductAll">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/cartToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/cartActualToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/arrow"
+            app:title="All Products"
+            app:titleCentered="true" />
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerProductosAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cartToolbar">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp">
+
+            <include layout="@layout/product_display_main_placeholder"></include>
+
+            <include layout="@layout/product_display_main_placeholder"></include>
+
+            <include layout="@layout/product_display_main_placeholder"></include>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="50dp">
+
+            <include layout="@layout/product_display_main_placeholder"></include>
+
+            <include layout="@layout/product_display_main_placeholder"></include>
+
+            <include layout="@layout/product_display_main_placeholder"></include>
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <!--            <EditText-->
+    <!--                android:id="@+id/search"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="50dp"-->
+    <!--                android:layout_marginStart="24dp"-->
+    <!--                android:layout_marginTop="16dp"-->
+    <!--                android:layout_marginEnd="24dp"-->
+    <!--                android:background="@drawable/edit_text_background"-->
+    <!--                android:drawableStart="@drawable/search_icon"-->
+    <!--                android:drawablePadding="8dp"-->
+    <!--                android:ems="10"-->
+    <!--                android:hint="Buscar"-->
+    <!--                android:inputType="text"-->
+    <!--                android:padding="8dp" />-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProductos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/cartToolbar"
+        app:layout_constraintTop_toBottomOf="@+id/cartToolbar"
+        app:layout_constraintVertical_bias="0.407"
+        tools:listitem="@layout/product_display_main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

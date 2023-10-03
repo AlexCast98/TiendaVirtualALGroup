@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TiendaVirtual"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.ProductAll"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CartPage"
+            android:exported="false" />
+        <activity
+            android:name=".activities.details_product"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Categorias"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Register"
+            android:exported="false"
+            android:theme="@style/botones"/>
+        <activity
+            android:name=".activities.CodigoAcceso"
+            android:exported="false" />
+        <activity
+            android:name=".activities.panelUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Login"
+            android:exported="false"
+            android:theme="@style/botones"/>
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

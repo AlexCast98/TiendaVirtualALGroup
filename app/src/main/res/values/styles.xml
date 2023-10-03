@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary" >@color/top</item>
+
+    </style>
+    <style name="SplashTheme" parent="AppTheme" >
+        <item name="android:windowBackground" >@drawable/al_group</item>
+
+    </style>
+    <style name="botonLogin" parent="AppTheme" >
+
+    </style>
+    <style name="botones" parent="Theme.AppCompat.Light" >
+
+    </style>
+    <style name="botonesRegisterLogin" parent="Widget.AppCompat.Button" >
+        <item name="android:windowBackground" >#0E7CEA</item>
+
+    </style>
+
+</resources>
